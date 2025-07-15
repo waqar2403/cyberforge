@@ -43,7 +43,7 @@ console.log(req.body)
     };
 
     const activationToken = createActivationToken(shop);
-    const activationUrl = `http://localhost:3000/ShopActivationPage/${activationToken}`;
+    const activationUrl = `${process.env.FRONTEND_URL}/ShopActivationPage/${activationToken}`;
 
     try {
       sendEmail({
