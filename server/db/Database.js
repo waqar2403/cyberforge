@@ -1,9 +1,7 @@
-// db/Database.js
-
 const mongoose = require('mongoose');
 
 const connectDatabase = () => {
-  mongoose.connect("mongodb+srv://root:root@lms.j2ehk.mongodb.net/?retryWrites=true&w=majority&appName=LMS")
+  mongoose.connect(`${process.env.DB_URI}`)
     .then(() => {
       console.log('MongoDB connected successfully');
     })

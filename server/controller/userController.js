@@ -1,4 +1,3 @@
-require('dotenv').config();
 const catchAsyncError = require("../middleware/catchAsyncError");
 const User = require("../model/userModel");
 const ErrorHandler = require("../utils/ErrorHandler");
