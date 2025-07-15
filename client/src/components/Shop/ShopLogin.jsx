@@ -4,7 +4,6 @@ import styles from "../../styles/styles";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
-require('dotenv').config();
 
 const ShopLogin = () => {
   const navigate = useNavigate();
