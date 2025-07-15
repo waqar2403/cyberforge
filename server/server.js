@@ -1,5 +1,6 @@
 // server/server.js
-
+// Configure dotenv to load environment variables
+require('dotenv').config();
 const app = require('./app');
 const connectDatabase = require("./db/Database");
 const cloudinary = require("cloudinary");
