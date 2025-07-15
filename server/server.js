@@ -4,10 +4,6 @@ const app = require('./app');
 const connectDatabase = require("./db/Database");
 const cloudinary = require("cloudinary");
 
-
-// Load environment variables
-dotenv.config();
-
 cloudinary.config({
   cloud_name:process.env.CLOUD_NAME,
   api_key:process.env.CLOUD_API_KEY,
